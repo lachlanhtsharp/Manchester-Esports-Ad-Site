@@ -1,0 +1,169 @@
+.Header {
+    position: fixed;
+    width: 100%;
+    height: 6.5vh;
+    background: #16161d;
+}
+
+.Header-Container {
+    width: 100%;
+    height: 100%;
+    background: #16161d;
+    display: flex;
+}
+
+.Header-Spacer {
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.Menu-Button-Container {
+    height: 60%;
+    width: 40px;
+    /* border: 1px solid red; */
+    margin-left: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    transition: all .2s ease;
+}
+
+.Menu-Button-Container:hover {
+    height: 70%;
+    cursor: pointer;
+}
+
+.Menu-Button {
+    display: inline-block;
+    height: 4px;
+    width: 70%;
+    /* border: 1px solid yellow; */
+    background: #EEB111;
+    transition: all .2s ease;
+    border-radius: 10px;
+}
+
+.Header-Logo {
+    width: 33.3%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.Logo {
+    z-index: 1;
+    width: 80px;
+    height: 95px;
+    user-select: none;
+    cursor: pointer;
+    transition: all .25s ease-out;
+}
+
+.Logo:hover {
+    width: 85px;
+    height: 100px;
+}
+
+.Navlinks-Container {
+    position: absolute;
+    height: 60vh;
+    /* border: 1px solid red; */
+    width: 17%;
+    background: #16161d;
+    border-bottom-right-radius: 10px;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+}
+
+.Navlinks-Container.active {
+    transform: translateX(0%);
+}
+
+.NavLinks {
+    border: 3px solid #16161d;
+    width: 96%;
+    height: 15%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    transition: border .25s ease;
+    border-radius: 5px;
+}
+
+.NavLinks:hover {
+    border: 1px solid #EEB111;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: silver;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .NavLinks {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 728px) {
+    .Logo {
+        width: 60px;
+        height: 75px;
+        transition: all .25s ease-out;
+    }
+
+    .Logo:hover {
+        width: 65px;
+        height: 80px;
+    }
+
+    .Logo:active {
+        width: 65px;
+        height: 80px;
+    }
+
+    .Menu-Button-Container {
+        height: 80%;
+        width: 50px;
+    }
+
+    .Menu-Button-Container:active {
+        height: 85%;
+        width: 55px;
+    }
+
+    .Navlinks-Container {
+        height: 100vh;
+        /* border: 1px solid red; */
+        width: 50%;
+        background: #16161d;
+        border-bottom-right-radius: 0px;
+    }
+
+    .NavLinks {
+        /* border: 1px solid yellow; */
+        width: 96%;
+        height: 15%;
+        font-family: 'Raleway', sans-serif;
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .NavLinks:active {
+        border: 1px solid #EEB111;
+    }
+    
+}
+

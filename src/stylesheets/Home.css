@@ -1,0 +1,6 @@
+.Home-Container {
+    background-image: url('../assets/Background-One.png');
+    height: 100vh;
+    border-bottom: 10px solid #16161d;
+    scroll-behavior: smooth;
+}

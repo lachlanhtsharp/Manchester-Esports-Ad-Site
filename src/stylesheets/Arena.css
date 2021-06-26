@@ -1,0 +1,6 @@
+.Arena-Container {
+    height: 100vh;
+    background-image: url('../assets/Background-Two.png');
+    border-bottom: 10px solid #16161d;
+    scroll-behavior: smooth;
+}
