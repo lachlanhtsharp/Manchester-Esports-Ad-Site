@@ -1,8 +1,8 @@
 import React from 'react'
 
-import '../stylesheets/Arena.css';
+import '../stylesheets/Scholarships.css';
 
-const Arena = () => {
+const Scholarships = () => {
 
     const collapseNavbar = () => {
         const navbar = document.querySelector('.Navlinks-Container');
@@ -14,10 +14,10 @@ const Arena = () => {
       }
 
     return (
-        <div id='Arena-Container' className='Arena-Container' onClick={() => collapseNavbar()}>
+        <div id='Scholarships-Container' className='Scholarships-Container' onClick={() => collapseNavbar()}>
             
         </div>
     )
 }
 
-export default Arena
+export default Scholarships

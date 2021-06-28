@@ -1,6 +1,12 @@
 .Arena-Container {
     height: 100vh;
-    background-image: url('../assets/Background-Two.png');
+    width: 101vw;
+    background-image: url('../assets/Background-One.png');
     border-bottom: 10px solid #16161d;
-    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 900px) {
+    .Arena-Container {
+        background: #eeb111;
+    }
 }

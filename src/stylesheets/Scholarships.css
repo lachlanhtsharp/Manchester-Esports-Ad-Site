@@ -1,0 +1,12 @@
+.Scholarships-Container {
+    background-image: url('../assets/Background-Two.png');
+    height: 100vh;
+    width: 101vw;
+    border-bottom: 10px solid #16161d;
+}
+
+@media only screen and (max-width: 900px) {
+    .Scholarships-Container {
+        background: whitesmoke;
+    }
+}

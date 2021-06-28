@@ -15,14 +15,16 @@ const Header = () => {
         <div className='Header'>
             <div className='Header-Container'>
                 <div className='Header-Spacer'>
-                    <div className='Menu-Button-Container' onClick={NavLinksToggle}>
+                    <div className='Menu-Button-Container' onClick={() => NavLinksToggle()}>
                         <div className='Menu-Button'></div>
                         <div className='Menu-Button'></div>
                         <div className='Menu-Button'></div>
                     </div>
                 </div>
                 <div className='Header-Logo'>
-                    <img className='Logo' alt='Manchester-Logo' src={Logo}></img>
+                    <a href='#Home-Container' className='Logo-Link'>
+                        <img className='Logo' alt='Manchester-Logo' src={Logo}></img>
+                    </a>
                 </div>
                 <div className='Header-Spacer'></div>
             </div>
@@ -34,10 +36,10 @@ const Header = () => {
                     <a href='#Arena-Container' classname='Navlink'>The Arena</a>
                 </div>
                 <div className='NavLinks'>
-                    <a href='' classname='Navlink'>Gaming Rigs</a>
+                    <a href='#GamingRigs-Container' classname='Navlink'>Gaming Rigs</a>
                 </div>
                 <div className='NavLinks'>
-                    <a href='' classname='Navlink'>Scholarships</a>
+                    <a href='#Scholarships-Container' classname='Navlink'>Scholarships</a>
                 </div>
                 <div className='NavLinks'>
                     <a href='' classname='Navlink'>Contact Us</a>

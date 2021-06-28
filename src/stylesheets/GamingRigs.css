@@ -1,0 +1,12 @@
+.GamingRigs-Container {
+    background-image: url('../assets/Background-Three.png');
+    height: 100vh;
+    width: 101vw;
+    border-bottom: 10px solid #16161d;
+}
+
+@media only screen and (max-width: 900px) {
+    .GamingRigs-Container {
+        background: #515157;
+    }
+}
