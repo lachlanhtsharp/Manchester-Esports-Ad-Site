@@ -1,12 +1,143 @@
 .Arena-Container {
+
     height: 100vh;
     width: 101vw;
     background-image: url('../assets/Background-One.png');
+    display: flex;
+    align-items: center;
     border-bottom: 10px solid #16161d;
 }
 
-@media only screen and (max-width: 900px) {
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.slide.active {
+    /* border: 1px solid yellow; */
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(.92);
+}
+
+.Carousel-Container {
+    /* border: 1px solid green; */
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    user-select: none;
+}
+
+.Image-Details-Container {
+    height: auto;
+    /* border: 1px solid blue; */
+    width: 20%;
+}
+
+.Image-Title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 3vw;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.Image-Details {
+    margin-top: 1vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.Esports-Arena-Image {
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    height: 70%;
+    width: 70%;
+    border: 1px solid #eeb111;
+    box-shadow: 0px 0px 5px 5px #16161d;
+}
+
+.Left-Arrow-Container {
+    height: auto;
+    width: 4%;
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    cursor: pointer;
+}
+
+.Right-Arrow-Container {
+    height: auto;
+    width: 4%;
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
     .Arena-Container {
         background: #eeb111;
+    }
+
+    .Image-Details-Container {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .Image-Title {
+        font-size: 3vw;
+    }
+
+    .Image-Details {
+        font-size: 1.5vw;
+    }
+
+    .Esports-Arena-Image {
+        width: 70%;
+    }
+
+    .Left-Arrow-Container {
+        height: 10vh;
+        width: 12%;
+        /* border: 1px solid blue; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 6vw;
+
+    }
+    
+    .Right-Arrow-Container {
+        height: 10vh;
+        width: 12%;
+        /* border: 1px solid blue; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 6vw;
+
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .Arena-Container {
+        height: 50vh;
+    }
+
+    .Image-Title {
+        font-size: 5vw;
+    }
+
+    .Image-Details {
+        font-size: 4vw;
     }
 }
