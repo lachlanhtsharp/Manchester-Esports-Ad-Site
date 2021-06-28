@@ -3,6 +3,8 @@
     height: 100vh;
     width: 101vw;
     background-image: url('../assets/Background-One.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     border-bottom: 10px solid #16161d;
@@ -89,6 +91,7 @@
     }
 
     .Image-Details-Container {
+        margin-bottom: 1vh;
         width: 100%;
         height: 20vh;
     }
