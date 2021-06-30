@@ -58,7 +58,7 @@
 }
 
 .Twitter-Link:hover {
-    animation: twitterHover 0s linear .2s forwards;
+    animation: twitterHover 0s linear 0s forwards;
     cursor: pointer;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .Twitch-Link:hover {
-    animation: twitterHover 0s linear .2s forwards;
+    animation: twitterHover 0s linear 0s forwards;
     cursor: pointer;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .YouTube-Link:hover {
-    animation: twitterHover 0s linear .2s forwards; 
+    animation: twitterHover 0s linear 0s forwards; 
 }
 
 .Footer-Link {
