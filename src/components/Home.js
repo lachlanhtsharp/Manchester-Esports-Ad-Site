@@ -1,6 +1,5 @@
 import React from 'react'
 import '../stylesheets/Home.css';
-import Iframe from 'react-iframe';
 
 const Home = () => {
 
@@ -27,7 +26,7 @@ const Home = () => {
           collapseNavbar();
           collapseContactUs();
           }}>
-            <iframe src="http://www.youtube.com/embed/QAZcibV7xnA"
+            <iframe src="https://www.youtube.com/embed/QAZcibV7xnA"
              className='Esports-Video' />
         </div>
     )
