@@ -15,8 +15,20 @@ const GamingRigs = () => {
         }
       }
 
+      const collapseContactUs = () => {
+        const ContactUs = document.querySelector('.ContactUs-Popup-Container');
+        if (ContactUs.classList[1] === 'active') {
+          ContactUs.classList.toggle('active');
+        } else {
+          console.log('Closed');
+        }
+      }
+
     return (
-        <div id='GamingRigs-Container' className='GamingRigs-Container' onClick={() => collapseNavbar()}>
+        <div id='GamingRigs-Container' className='GamingRigs-Container' onClick={() => {
+          collapseNavbar();
+          collapseContactUs();
+          }}>
           <a href='https://us.msi.com/Desktop/MPG-Trident-AS-10X/Specification' target='_blank' className='Desktop-Link'>
             <img src={Desktop} alt='Desktop PC' className='Desktop-Image' />
           </a>

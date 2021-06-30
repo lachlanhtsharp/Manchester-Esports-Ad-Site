@@ -1,0 +1,165 @@
+.Footer-Container {
+    height: 5vh;
+    border-top: 1px solid #eeb111;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Footer-Segment-App-Links {
+    width: 33.3%;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.Footer-Segment {
+    width: 33.3%;
+    /* border: 1px solid red; */
+}
+
+.App-Link {
+    width: 33.3%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App-Link-Anchor {
+    /* border: 1px solid yellow; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@keyframes twitterHover {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+.Twitter-Link {
+    height: auto;
+    position: absolute;
+    width: 2vw;   
+    /* border: 1px solid red; */
+}
+
+.Twitter-Link-Bottom {
+    height: auto;
+    position: absolute;
+    width: 2vw;  
+}
+
+.Twitter-Link:hover {
+    animation: twitterHover .15s linear .2s forwards;
+    cursor: pointer;
+}
+
+.Twitch-Link {
+    position: absolute;
+    width: 2vw; 
+    /* border: 1px solid blue; */
+}
+
+.Twitch-Link-Bottom {
+    position: absolute;
+    width: 2vw; 
+}
+
+.Twitch-Link:hover {
+    animation: twitterHover .15s linear .2s forwards;
+    cursor: pointer;
+}
+
+.YouTube-Link {
+    position: absolute;
+    width: 2.5vw; 
+ 
+}
+
+.YouTube-Link-Bottom {
+    position: absolute;
+    width: 2.5vw; 
+
+}
+
+.YouTube-Link:hover {
+    animation: twitterHover .15s linear .2s forwards; 
+}
+
+.Footer-Link {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #eeb111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    transition: all .25s ease;
+}
+
+.Footer-Link:hover {
+    font-size: 1.5vw;
+}
+
+.Contact-Link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3vw;
+    color: #eeb111;
+    transition: all .25s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Contact-Link:hover {
+    font-size: 1.5vw;
+}
+
+@media only screen and (max-width: 425px) {
+    .Footer-Segment-App-Links {
+        width: 100%;
+    }
+
+    .Footer-Segment {
+        display: none;
+        width: 0%;
+    }
+
+    .Twitter-Link {
+        display: none;
+    }
+
+    .Twitter-Link-Bottom {
+        
+        width: 8.75vw;
+    }
+
+    .Twitch-Link {
+        display: none;
+    }
+
+    .Twitch-Link-Bottom {
+        width: 8.75vw;
+    }
+
+    .YouTube-Link {
+        display: none;
+    }
+
+    .YouTube-Link-Bottom {
+        width: 8.75vw;
+    }
+}

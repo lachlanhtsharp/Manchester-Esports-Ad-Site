@@ -1,0 +1,111 @@
+.ContactUs-Popup-Container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 1s ease;
+    pointer-events: none;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContactUs-Popup-Container.active {
+    opacity: 1;
+}
+
+.ContactUs-Inner-Container {
+    width: 40vw;
+    height: 30vh;
+    background: #16161d;
+    border-radius: 10px;
+    border: 1px solid #eeb111;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.ContactUs-Inner-Container.active {
+    pointer-events: all;
+}
+
+.ContactUs-Details {
+    width: 66%;
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Details-List {
+    list-style-type: none;
+    color: #eeb111;
+    /* border: 1px solid white; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.Detail-Name {
+    font-size: 2vw;
+}
+
+.Detail {
+    font-size: 1.25vw;
+    
+}
+
+.ContactUs-Headshot {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Headshot {
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgb(32, 32, 32);
+}
+
+.ContactUs-Button {
+    height: 11%;
+    background: black;
+    border: 1px solid black;
+    color: #eeb111;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.ContactUs-Button:hover {
+    height: 10%;
+}
+
+@media only screen and (max-width: 425px) {
+    .ContactUs-Inner-Container {
+        height: 50vh;
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Detail-Name {
+        font-size: 6vw;
+    }
+
+    .Detail {
+        font-size:4vw;
+        user-select: all;
+    }
+}

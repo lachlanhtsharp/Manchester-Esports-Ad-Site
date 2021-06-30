@@ -134,6 +134,7 @@
 @media only screen and (max-width: 425px) {
     .Arena-Container {
         height: 50vh;
+        border-bottom: none;
     }
 
     .Image-Title {

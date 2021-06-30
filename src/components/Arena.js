@@ -26,8 +26,20 @@ const Arena = () => {
         }
       }
 
+      const collapseContactUs = () => {
+        const ContactUs = document.querySelector('.ContactUs-Popup-Container');
+        if (ContactUs.classList[1] === 'active') {
+          ContactUs.classList.toggle('active');
+        } else {
+          console.log('Closed');
+        }
+      }
+
     return (
-        <div id='Arena-Container' className='Arena-Container' onClick={() => collapseNavbar()}>
+        <div id='Arena-Container' className='Arena-Container' onClick={() => {
+          collapseNavbar();
+          collapseContactUs();
+          }}>
             {
                 CarouselData.map((slide, index) => {
                     return (

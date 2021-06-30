@@ -83,7 +83,8 @@
 .Navlinks-Container {
     position: absolute;
     height: 60vh;
-    /* border: 1px solid red; */
+    border-right: 1px solid #eeb111;
+    border-bottom: 1px solid #eeb111;
     width: 17%;
     background: #16161d;
     border-bottom-right-radius: 10px;
@@ -106,6 +107,7 @@
     align-items: center;
     transition: border .25s ease;
     border-radius: 5px;
+    color: silver;
 }
 
 .NavLinks:hover {
@@ -120,6 +122,16 @@
     width: 100%;
     height: 100%;
     padding-left: 20px;
+}
+
+.ContactUs {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    cursor: pointer;
+    user-select: none;
 }
 
 @media only screen and (max-width: 1400px) {

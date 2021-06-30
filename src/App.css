@@ -36,4 +36,6 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
 }

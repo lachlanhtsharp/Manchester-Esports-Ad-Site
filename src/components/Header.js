@@ -5,11 +5,22 @@ import Logo from '../assets/MU_Logo.png';
 const Header = () => {
 
     const Navlinks = document.querySelector('.Navlinks-Container');
+    const ContactUs = document.querySelector('.ContactUs-Popup-Container');
+    const ContactUs2 = document.querySelector('.ContactUs-Inner-Container');
 
     const NavLinksToggle = () => {
         const Navlinks = document.querySelector('.Navlinks-Container');
         Navlinks.classList.toggle('active');
     }
+
+    const ContactUsToggle = () => {
+        const ContactUs = document.querySelector('.ContactUs-Popup-Container');
+        const ContactUs2 = document.querySelector('.ContactUs-Inner-Container');
+        ContactUs.classList.toggle('active');
+        ContactUs2.classList.toggle('active');
+    }
+
+    
 
     return (
         <div className='Header'>
@@ -39,10 +50,10 @@ const Header = () => {
                     <a href='#GamingRigs-Container' classname='Navlink'>Gaming Rigs</a>
                 </div>
                 <div className='NavLinks'>
-                    <a href='#Scholarships-Container' classname='Navlink'>Scholarships</a>
+                    <a href='#Footer-Container' classname='Navlink'>Scholarships</a>
                 </div>
                 <div className='NavLinks'>
-                    <a href='' classname='Navlink'>Contact Us</a>
+                    <div className='ContactUs' onClick={() => ContactUsToggle()}>Contact Us</div>
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 .Home-Container {
     width: 100vw;
-    background: #16161d;
+    /* background: #16161d; */
+    background-image: url('../assets/Black-Background.jpg');
     height: 100vh;
     display: flex;
     align-items: center;
@@ -21,5 +22,6 @@
 @media only screen and (max-width: 425px) {
     .Home-Container {
         height: 50vh;
+        border-bottom: none;
     }
 }

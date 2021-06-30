@@ -13,8 +13,20 @@ const Home = () => {
         }
       }
 
+      const collapseContactUs = () => {
+        const ContactUs = document.querySelector('.ContactUs-Popup-Container');
+        if (ContactUs.classList[1] === 'active') {
+          ContactUs.classList.toggle('active');
+        } else {
+          console.log('Closed');
+        }
+      }
+
     return (
-        <div id='Home-Container' className='Home-Container' onClick={() => collapseNavbar()}>
+        <div id='Home-Container' className='Home-Container' onClick={() => {
+          collapseNavbar();
+          collapseContactUs();
+          }}>
             <Iframe url="http://www.youtube.com/embed/QAZcibV7xnA"
              className='Esports-Video'
              display="initial"
