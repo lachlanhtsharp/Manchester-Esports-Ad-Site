@@ -28,9 +28,7 @@ const Home = () => {
           collapseContactUs();
           }}>
             <Iframe url="http://www.youtube.com/embed/QAZcibV7xnA"
-             className='Esports-Video'
-             display="initial"
-             allow='fullscreen' />
+             className='Esports-Video'/>
         </div>
     )
 }
