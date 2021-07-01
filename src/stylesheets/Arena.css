@@ -88,12 +88,15 @@
 @media only screen and (max-width: 1024px) {
     .Arena-Container {
         background: #eeb111;
+        flex-direction: column;
+        height: auto;
     }
 
     .Image-Details-Container {
         margin-bottom: 1vh;
         width: 100%;
-        height: 20vh;
+        height: auto;
+        /* border: 1px solid red; */
     }
 
     .Image-Title {
@@ -101,7 +104,7 @@
     }
 
     .Image-Details {
-        font-size: 1.5vw;
+        font-size: 3vw;
     }
 
     .Esports-Arena-Image {
