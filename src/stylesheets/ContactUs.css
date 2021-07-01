@@ -92,6 +92,21 @@
     height: 10%;
 }
 
+@media only screen and (max-width: 900px) {
+    .ContactUs-Inner-Container {
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .Detail-Name {
+        font-size: 4vw;
+    }
+
+    .Detail {
+        font-size: 3vw;
+    }
+}
+
 @media only screen and (max-width: 425px) {
     .ContactUs-Inner-Container {
         height: 50vh;

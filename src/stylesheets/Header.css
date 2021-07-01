@@ -16,11 +16,43 @@
 }
 
 .Header-Spacer {
-    width: 33.33%;
+    width: 20%;
     height: 100%;
     display: flex;
     align-items: center;
     /* border: 1px solid red; */
+}
+
+.Header-Link {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+
+}
+
+.Header-Link a {
+    width: 100%;
+    height: 100%;
+
+    text-decoration: none;
+    color: #eeb111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2vw;
+    transition: all .5s ease;
+}
+
+.Header-Link a:hover {
+    font-size: 2.2vw;
 }
 
 .Menu-Button-Container {
@@ -33,6 +65,10 @@
     justify-content: space-around;
     align-items: center;
     transition: all .2s ease;
+
+    pointer-events: none;
+    user-select: none;
+    display: none;
 }
 
 .Menu-Button-Container:hover {
@@ -51,7 +87,7 @@
 }
 
 .Header-Logo {
-    width: 33.33%;
+    width: 20%;
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
@@ -143,6 +179,7 @@
 
 @media only screen and (max-width: 900px) {
 
+
     .Logo {
         width: 40px;
         height: 50px;
@@ -162,11 +199,19 @@
     .Menu-Button-Container {
         height: 80%;
         width: 50px;
+
+        pointer-events: all;
+        user-select: all;
+        display: flex;
     }
 
     .Menu-Button-Container:active {
         height: 85%;
         width: 55px;
+    }
+
+    .Header-Link {
+        display: none;
     }
 
     .Navlinks-Container {

@@ -20,7 +20,7 @@ const Header = () => {
         ContactUs2.classList.toggle('active');
     }
 
-    
+
 
     return (
         <div className='Header'>
@@ -31,13 +31,31 @@ const Header = () => {
                         <div className='Menu-Button'></div>
                         <div className='Menu-Button'></div>
                     </div>
+                    <div className='Header-Link'>
+                        <a href='#Home-Container' classname='Navlink'>Home</a>
+
+                    </div>
+                </div>
+                <div className='Header-Spacer'>
+                    <div className='Header-Link'>
+                        <a href='#Arena-Container' classname='Navlink'>The Arena</a>
+                    </div>
                 </div>
                 <div className='Header-Logo'>
-                    <a href='#Home-Container' className='Logo-Link'>
+                    <a href='https://www.manchester.edu/' target='_blank' className='Logo-Link'>
                         <img className='Logo' alt='Manchester-Logo' src={Logo}></img>
                     </a>
                 </div>
-                <div className='Header-Spacer'></div>
+                <div className='Header-Spacer'>
+                    <div className='Header-Link'>
+                        <a href='#GamingRigs-Container' classname='Navlink'>Gaming Rigs</a>
+                    </div>
+                </div>
+                <div className='Header-Spacer'>
+                    <div className='Header-Link'>
+                        <a href='#Footer-Container' classname='Navlink'>Scholarships</a>
+                    </div>
+                </div>
             </div>
             <div className='Navlinks-Container'>
                 <div className='NavLinks'>
