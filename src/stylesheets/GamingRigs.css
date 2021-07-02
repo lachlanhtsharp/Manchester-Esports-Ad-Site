@@ -121,7 +121,13 @@
 }
 
 @media only screen and (max-width: 425px) {
+
+    .Desktop-Image {
+        margin-top: 5vh;
+    }
+
     .GamingRigs-Container {
         border-bottom: 3px solid #eeb111;
+        height: 99vh;
     }
 }

@@ -74,7 +74,7 @@
 @media only screen and (max-width: 1024px) {
     .Scholarships-Container {
         background: #16161d;
-        height: auto;
+        height: 100vh;
     }
 
     .Scholarships-Inner-Container {
@@ -108,6 +108,11 @@
 }
 
 @media only screen and (max-width: 425px) {
+
+    .Scholarships-Container {
+        height: 100vh;
+    }
+
     .Jersey {
         height: auto;
         width: 60%;

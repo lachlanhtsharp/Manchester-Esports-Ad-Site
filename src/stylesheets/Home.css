@@ -21,7 +21,7 @@
 
 @media only screen and (max-width: 425px) {
     .Home-Container {
-        height: 50vh;
+        height: 100vh;
         border-bottom: none;
     }
 }
