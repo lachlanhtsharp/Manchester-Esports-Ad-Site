@@ -58,7 +58,7 @@ const Arena = () => {
                                   <FaArrowAltCircleLeft className='Left-Arrow' />
                                 </div>
                                 <img src={slide.image} className='Esports-Arena-Image' alt='Esports Arena' />
-                                <div className='Right-Arrow-Container' onClick={prevSlide}>
+                                <div className='Right-Arrow-Container' onClick={nextSlide}>
                                   <FaArrowAltCircleRight className='Right-Arrow' />
                                 </div>
                               </div>
