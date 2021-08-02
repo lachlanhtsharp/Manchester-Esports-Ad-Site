@@ -126,4 +126,8 @@
     .Scholarship-Paragraph {
         font-size: 5vw;
     }
+
+    .Scholarship-Paragraph:hover {
+        font-size: 5.2vw;
+    }
 }
